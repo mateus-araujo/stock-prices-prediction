@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+datetime
+plotly
+yfinance
+investpy
+sklearn
