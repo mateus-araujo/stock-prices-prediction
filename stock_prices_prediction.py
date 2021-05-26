@@ -108,7 +108,7 @@ form = st.sidebar.form(key='stock-form')
 
 stocks_df = get_stocks_data()
 
-stocks_list = stocks_df['symbol'].map(lambda stock: stock).unique()
+stocks_list = sorted(stocks_df['symbol'].map(lambda stock: stock).unique())
 stock_selected = form.selectbox(
     label="Ação",
     options=stocks_list,
